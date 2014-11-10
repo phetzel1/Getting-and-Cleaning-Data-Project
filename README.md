@@ -1,7 +1,9 @@
 Getting-and-Cleaning-Data-Project
 =================================
-The following R script (run_analysis.R) follows the prompt given by the Getting and Cleaning Data course project.
+##Overview
+The following R script (run_analysis.R) follows the prompt given by the Getting and Cleaning Data course project.  Variable specifics and definitions can be found in the Codebook.  By running the script, the user will generate the mean values for every feature, grouped by both subject and activity.
 
+##Technical Summary
 The single script does all of the following: <br>
   1: Downloads the source data <br>
   2: Names the source data columns using the features.txt file<br>
@@ -15,7 +17,7 @@ The single script does all of the following: <br>
   10: Lengthens the data frame from step 9 using melt<br>
   11: Writes the dataset to a txt file<br>
 <br>
-Data Inputs:<br>
+##Data Inputs:<br>
   a. X_test.txt<br>
   b. Y_test.txt<br>
   c. subject_test.txt<br>
@@ -23,6 +25,5 @@ Data Inputs:<br>
   e. Y_train.txt<br>
   f. subject_train.txt<br>
   g. features.txt<br>
-  <br>
-Data Ouputs:<br>
+##Data Ouputs:<br>
   a. Average by Subject and Activity.txt
