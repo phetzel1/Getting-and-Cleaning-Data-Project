@@ -10,28 +10,28 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 ###Variables
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ<br>
+tGravityAcc-XYZ<br>
+tBodyAccJerk-XYZ<br>
+tBodyGyro-XYZ<br>
+tBodyGyroJerk-XYZ<br>
+tBodyAccMag<br>
+tGravityAccMag<br>
+tBodyAccJerkMag<br>
+tBodyGyroMag<br>
+tBodyGyroJerkMag<br>
+fBodyAcc-XYZ<br>
+fBodyAccJerk-XYZ<br>
+fBodyGyro-XYZ<br>
+fBodyAccMag<br>
+fBodyAccJerkMag<br>
+fBodyGyroMag<br>
+fBodyGyroJerkMag<br>
+<br>
+The relevant measures for the features are the two following figures:<br>
 
-The relevant measures for the output are the two following figures:
-
-mean(): Mean value
-std(): Standard deviation
+mean(): Mean value<br>
+std(): Standard deviation<br>
 
 ###Data Transformation
 Both the train and test data sets were tranformed in the same fashion.  The files were downloaded, along with the features.txt file, which acted as the column names.
@@ -40,3 +40,6 @@ Mean and std columsn were separated out by applying a combination of the grepl a
 The script adds back in the indices for subject and activity, and applies those indices to subset the combined dataset
 The subsetted data frame was melted using Subject and Activity as the grouping variables, then dcast was used to apply the mean function
 The resulting dataset was melted again by Subject and Activity and written to the output file.
+
+###Ouput
+The output file is named Average by Subject and Activity.txt.  It shows the mean value of the mean and std measures for each features, grouped by Activity and Subject
